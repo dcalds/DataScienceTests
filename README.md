@@ -1,3 +1,3 @@
 # DataScienceTests
 
-Just some algorithms.
+Scikit-learn examples
