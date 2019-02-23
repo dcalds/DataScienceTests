@@ -26,7 +26,7 @@ first_year = first_movie.h3.find('span', class_ = 'lister-item-year').text
 # IMDB Score
 first_score_imdb = float(first_movie.strong.text)
 
-# Votos
+# Votes
 first_vote = first_movie.find('span', attrs = {'name':'nv'})['data-value']
 
 names = []
