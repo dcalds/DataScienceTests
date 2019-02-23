@@ -1,3 +1,3 @@
 # DataScienceTests
 
-Scikit-learn examples
+Scikit-learn and data analysis examples
