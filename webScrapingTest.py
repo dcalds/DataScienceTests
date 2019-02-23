@@ -1,4 +1,4 @@
-# Extracting contente from IMDB
+# Extracting content from IMDB
 from requests import get
 from bs4 import BeautifulSoup
 from tqdm import tqdm
@@ -34,14 +34,14 @@ years = []
 imdbs = []
 votes = []
 
-# Extraindo dado de cada filme
+# Extracting content for each movie
 for movie in movies:
 
-        # Nome
+        # Name
         name = movie.h3.a.text
         names.append(name)
 
-        # Ano
+        # Year
         year = movie.h3.find('span', class_ = 'lister-item-year').text
         years.append(year)
 
@@ -50,7 +50,7 @@ for movie in movies:
         imdbs.append(imdb)
 
 
-        # Votos
+        # Votes
         vote = movie.find('span', attrs = {'name':'nv'})['data-value']
         votes.append(int(vote))
 
